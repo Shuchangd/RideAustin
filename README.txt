@@ -5,7 +5,7 @@ Author:
         Shuchang Dong | Shengxiao Li
 
 Link:
-        Shuchang Dong | Shengxiao Li
+        https://shuchangd.github.io/RideAustin/
 
 Credits:
 	Website Template:
