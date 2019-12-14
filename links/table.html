@@ -1,0 +1,140 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>hvPlot Plot</title>
+      
+      
+        
+          
+        <style>
+            table.panel-df {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    color: black;
+                    font-size: 12px;
+                    table-layout: fixed;
+                }
+
+                .panel-df tr, th, td {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 0.5em 0.5em !important;
+                    line-height: normal;
+                    white-space: normal;
+                    max-width: none;
+                    border: none;
+                }
+
+                .panel-df tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+
+                .panel-df tbody tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                .panel-df thead {
+                    border-bottom: 1px solid black;
+                    vertical-align: bottom;
+                }
+
+                .panel-df tr:hover {
+                    background: lightblue !important;
+                    cursor: pointer;
+                }
+
+        </style>
+        <style>
+            .widget-box {
+                	min-height: 20px;
+                	background-color: #f5f5f5;
+                	border: 1px solid #e3e3e3 !important;
+                	border-radius: 4px;
+                	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                }
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="9c4d00cd-49d6-4eea-9041-f43b2cd4ccdf" data-root-id="1826"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1846">
+          {"01c7f1b5-51c7-494c-b465-264c802ff63b":{"roots":{"references":[{"attributes":{"editor":{"id":"1797","type":"NumberEditor"},"field":"per_black_age","formatter":{"id":"1796","type":"NumberFormatter"},"title":"per_black_age"},"id":"1798","type":"TableColumn"},{"attributes":{},"id":"1822","type":"NumberEditor"},{"attributes":{},"id":"1807","type":"NumberEditor"},{"attributes":{},"id":"1812","type":"NumberEditor"},{"attributes":{"format":"0,0.0[00000]"},"id":"1821","type":"NumberFormatter"},{"attributes":{"editor":{"id":"1807","type":"NumberEditor"},"field":"per_disable_age","formatter":{"id":"1806","type":"NumberFormatter"},"title":"per_disable_age"},"id":"1808","type":"TableColumn"},{"attributes":{"editor":{"id":"1792","type":"NumberEditor"},"field":"medianinc65_plus","formatter":{"id":"1791","type":"NumberFormatter"},"title":"medianinc65+"},"id":"1793","type":"TableColumn"},{"attributes":{},"id":"1797","type":"NumberEditor"},{"attributes":{"format":"0,0.0[00000]"},"id":"1816","type":"NumberFormatter"},{"attributes":{"editor":{"id":"1802","type":"NumberEditor"},"field":"per_His_age","formatter":{"id":"1801","type":"NumberFormatter"},"title":"per_His_age"},"id":"1803","type":"TableColumn"},{"attributes":{"format":"0,0.0[00000]"},"id":"1796","type":"NumberFormatter"},{"attributes":{},"id":"1828","type":"UnionRenderers"},{"attributes":{"columns":[{"id":"1788","type":"TableColumn"},{"id":"1793","type":"TableColumn"},{"id":"1798","type":"TableColumn"},{"id":"1803","type":"TableColumn"},{"id":"1808","type":"TableColumn"},{"id":"1813","type":"TableColumn"},{"id":"1818","type":"TableColumn"},{"id":"1823","type":"TableColumn"}],"height":300,"reorderable":false,"source":{"id":"1784","type":"ColumnDataSource"},"view":{"id":"1827","type":"CDSView"},"width":800},"id":"1826","type":"DataTable"},{"attributes":{"editor":{"id":"1817","type":"NumberEditor"},"field":"trip_per_capita","formatter":{"id":"1816","type":"NumberFormatter"},"title":"trip_per_capita"},"id":"1818","type":"TableColumn"},{"attributes":{},"id":"1787","type":"NumberEditor"},{"attributes":{},"id":"1792","type":"NumberEditor"},{"attributes":{"source":{"id":"1784","type":"ColumnDataSource"}},"id":"1827","type":"CDSView"},{"attributes":{"editor":{"id":"1812","type":"NumberEditor"},"field":"per_carless_age","formatter":{"id":"1811","type":"NumberFormatter"},"title":"per_carless_age"},"id":"1813","type":"TableColumn"},{"attributes":{"callback":null,"data":{"distance_per_capita":{"__ndarray__":"Yg21x8E8CUDyrm2oZY0UQEet5ITNMxlA6BjHJiHqEUCKVtbYkSoQQMi0PsrWfQhAnhUz8QlzFkA=","dtype":"float64","shape":[7]},"medianinc65_plus":{"__ndarray__":"AgAAAODe1UAodmInrkHzQGmapmkajehA3LZt2wb2/kABAAAAkODuQAAAAAB6A/hACn7gB1464kA=","dtype":"float64","shape":[7]},"per_His_age":{"__ndarray__":"jmyJZCeeQ0C7g/G10K0gQDb82wSOmTFAasUDJgZPHkDQM/p0+I4pQPjm/NUPtiNAgZMIpdGyOEA=","dtype":"float64","shape":[7]},"per_black_age":{"__ndarray__":"HUko3wLSNEBctVln0CsRQC3IWIJlFhpAcFgW22eS8z/rJVBRngoQQL4Z74tDmwBAxE+fqIpWKkA=","dtype":"float64","shape":[7]},"per_carless_age":{"__ndarray__":"/vl0ygvcMEAeNNspoHoIQEPHzHRhfhVAYdCvTlwGFkDR1gm7kKULQIDq7vlMquY/mDHTpQmBHEA=","dtype":"float64","shape":[7]},"per_disable_age":{"__ndarray__":"Vwv1V01DQ0DI8ILY2tQ5QK6kMhXq40JAXtC3eCH5OEDJaM+sWjpAQE8ifVEzmThALhBS40AhQ0A=","dtype":"float64","shape":[7]},"percent_aging":{"__ndarray__":"teoQIKIXH0DWmd2FGSIqQESsvVkQcSRAv+8Gm07nKkAq8yU3cncpQO87QShrMyRA+MgzKj9tIUA=","dtype":"float64","shape":[7]},"trip_per_capita":{"__ndarray__":"wzkY+hnI8j86MIBqsoPjP5BRN4Fav9U/7qKX0gPvGkDSeuC0NzTgPx8dlg7xSug/yLAzObsi4j8=","dtype":"float64","shape":[7]}},"selected":{"id":"1785","type":"Selection"},"selection_policy":{"id":"1828","type":"UnionRenderers"}},"id":"1784","type":"ColumnDataSource"},{"attributes":{},"id":"1817","type":"NumberEditor"},{"attributes":{"format":"0,0.0[00000]"},"id":"1791","type":"NumberFormatter"},{"attributes":{"format":"0,0.0[00000]"},"id":"1811","type":"NumberFormatter"},{"attributes":{"format":"0,0.0[00000]"},"id":"1806","type":"NumberFormatter"},{"attributes":{"format":"0,0.0[00000]"},"id":"1786","type":"NumberFormatter"},{"attributes":{"format":"0,0.0[00000]"},"id":"1801","type":"NumberFormatter"},{"attributes":{},"id":"1802","type":"NumberEditor"},{"attributes":{"editor":{"id":"1822","type":"NumberEditor"},"field":"distance_per_capita","formatter":{"id":"1821","type":"NumberFormatter"},"title":"distance_per_capita"},"id":"1823","type":"TableColumn"},{"attributes":{"editor":{"id":"1787","type":"NumberEditor"},"field":"percent_aging","formatter":{"id":"1786","type":"NumberFormatter"},"title":"percent_aging"},"id":"1788","type":"TableColumn"},{"attributes":{},"id":"1785","type":"Selection"}],"root_ids":["1826"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1846').textContent;
+                  var render_items = [{"docid":"01c7f1b5-51c7-494c-b465-264c802ff63b","roots":{"1826":"9c4d00cd-49d6-4eea-9041-f43b2cd4ccdf"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

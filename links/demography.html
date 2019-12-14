@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Demographical Charactor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">Bokeh.set_log_level("info");</script>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">< HOME</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Preliminary Research#3</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Spatial Pattern of Social-economic Factors</h1>
+                            <form method="" action="" name="myForm">
+                            	Select Social-economic Map Theme
+                                <select name="switch" onchange="switchImage();">
+                                    <option value="1">Percentage of Aging</option>
+                                    <option value="2">Percentage of Households without Cars for Household Heads 65+</option>
+                                    <option value="3">Percentage of Disabled People 65+</option>
+                                    <option value="4">Percentage of Black People 65+</option>
+                                    <option value="5">Median Income of People 65+</option>
+                                    <option value="6">Percentage of Hispanic 65+</option>
+                                    <option value="7">The Distribution of Races</option>
+                                </select>
+                            </form>
+                            <p><span class="image center" style = "left: 100px;"><img src="../images/pic01.jpg" name="myImage" alt="" /></span><span class="image center" style = "left: 100px;"><img src="../images/pic08.jpg" alt=""/></span></br>We compare the spatial distribution of demographic groups in Austin and the ride hailing trips aggregated to the census tract side by side as shown on our website. It shows that the ride hailing’s role among older adults are twofold. On the one hand, the use is unequally distributed in space. The suburbs of the north and south have very few ride hailing trips, while most of trips concentrate in the city center. On the other hand, the ride hailing use is relatively high in the eastern section of the city, where the share of older adults with disability, Hispanics and the share of households without private vehicles are all high. </p>
+
+                            <div id="includedContent"></div>
+
+                            <script type="text/javascript">
+                            	var imageList = Array();
+                                for (var i = 1; i <= 7; i++) {
+                                    imageList[i] = new Image(70, 70);
+                                    imageList[i].src = "../images/pic0" + i + ".jpg";
+                                }
+
+                                function switchImage() {
+                                    var selectedImage = document.myForm.switch.options[document.myForm.switch.selectedIndex].value;
+                                    document.myImage.src = imageList[selectedImage].src;
+                                }
+
+                                $(function(){
+                                    $("#includedContent").load("P2.html"); 
+                                });
+
+                            </script>
+
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; DSC&LSX. All rights reserved.</li><li>Data Source: <a href="http://www.rideaustin.com/">Ride Austin</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

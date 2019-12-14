@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cluster Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">Bokeh.set_log_level("info");</script>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">< HOME</a>
+				<nav>
+					<ul>
+						<li><a href=" ">Cluster Analysis</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Cluster Analysis</h1>
+                            <div id="includedContent"></div>
+                            <script> 
+                                $(function(){
+                                    $("#includedContent").load("cluster_map.html"); 
+                                });
+                            </script>
+                            <h3 style='visibility:visible;left:53%; top: 15%; width:33%;position:absolute'>What we can interpret from the result</h3>
+							<p style='visibility:visible;left:53%; top: 19%; width:33%;position:absolute'>We cluster the census tracts in Austin based on the socio-economic factors related to older adults and the trip patterns of RideAustin. We adopt the Silhouette Score Elbow to automatically determine the number of clusters. The figure shows the geographic distribution of three types of census tracts of a high concentration of older adults. Census tracts in Category 1 are mostly located in the outer suburbs. Census tracts in Category 3 are mostly located in the city center, while the census tracts in Category 4 are mostly low-income Latino communities.</br> </br> The figure further implies that ride hailing use is prevalent among communities with a high concentration of older adults. However, the ride hailing use benefits older adults living in the city center more. For those who live far from the city center and live in the poor neighborhoods, they travel for shorter distance or travel less frequently using RideAustin service though ride hailing provides an alternative mode for them in daily travel. </p></br>
+							<h3 class="major">Attribute Table for Each Cluster Group</h3>
+							<p style='visibility:visible; width: 93%;'>The table shows the mean character of the 7 categories of census tracts. In the analysis, we only focus on category 1, 3 and 4 as they have a higher share of older adults than the average level of Austin city. Category 1 has the relatively high share of Black people and the lowest rate of households without cars. In these census tracts, the trip per capita is the lowest, but the average distance of every trip is the longest. Category 3 has the highest median income, lowest level of disability and the highest percent of the households with cars. In these census tracts, the average trip per capita is the longest at nearly 7 and the distance is in the middle of all three groups. As for Category 4, these census tracts are characterized by low income, the highest share of the Hispanics. They have the lowest ride hailing trip per capita and the lowest average travel distance at close to 4 miles per trip.</p>
+							<span style = "left: 180px; width: 80%"><img src="../images/table.png" name="myImage" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; DSC&LSX. All rights reserved.</li><li>Data Source: <a href="http://www.rideaustin.com/">Ride Austin</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
